@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<!--
+* Tabler - Premium and Open Source dashboard template with responsive and high quality UI.
+* @version 1.0.0-beta20
+* @link https://tabler.io
+* Copyright 2018-2023 The Tabler Authors
+* Copyright 2018-2023 codecalm.net Paweł Kuna
+* Licensed under MIT (https://github.com/tabler/tabler/blob/master/LICENSE)
+-->
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Dashboard</title>
+        <!-- CSS files -->
+        <link href="./dist/css/tabler.min.css?1692870487" rel="stylesheet" />
+        <link href="./dist/css/tabler-flags.min.css?1692870487" rel="stylesheet" />
+        <link href="./dist/css/tabler-payments.min.css?1692870487" rel="stylesheet" />
+        <link href="./dist/css/tabler-vendors.min.css?1692870487" rel="stylesheet" />
+        <link href="./dist/css/demo.min.css?1692870487" rel="stylesheet" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+            integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <style>
+            @import url('https://rsms.me/inter/inter.css');
+            :root {
+                --tblr-font-sans-serif: 'Inter Var', -apple-system, BlinkMacSystemFont, San Francisco, Segoe UI, Roboto, Helvetica Neue, sans-serif;
+            }
+            body {
+                font-feature-settings: 'cv03', 'cv04', 'cv11';
+            }
+        </style>
+    </head>
+    <body style="background-color: white">
+        <script src="./dist/js/demo-theme.min.js?1692870487"></script>
+        <div class="page">
+            <!-- Navbar -->
+            <header class="navbar navbar-expand-md d-print-none">
+                <div class="container-xl d-flex align-items-center">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu" aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <h1 class="navbar-brand navbar-brand-autodark d-none-navbar-horizontal pe-0 pe-md-3">
+                        <a href=".">
+                            <img src="./LogoDBS.svg" alt="bank dbs logo" width="143" />
+                        </a>
+                    </h1>
+                    <div class="align-items-center flex-grow-1 text-center">
+                        <h1 class="mb-0">People Counting</h1>
+                    </div>
+                    <div class="navbar-nav flex-row order-md-last">
+                        <div class="d-flex flex-column align-items-center p-0 m-0 me-5" style="gap: 0; line-height: 32px">
+                            <span class="fst-italic p-0 m-0" style="font-size: 25px; letter-spacing: 0">30 OCT 2023</span>
+                            <span class="fw-bold p-0 m-0" style="font-size: 25px; color: #ed1c24; letter-spacing: -1.5px">13 : 30 : 25 WIB</span>
+                        </div>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link d-flex lh-1 text-reset p-0" data-bs-toggle="dropdown" aria-label="Open user menu">
+                                <img src="./assetdbs/profile.png" class="rounded-circle" style="width: 62px; height: 62px" alt="" />
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-end mt-2 p-2">
+                                <h3 class="py-1 my-1 px-2">Ahmad Refi</h3>
+                                <hr class="my-1" />
+                                <!-- Mengatur margin vertikal (atas dan bawah) menjadi sangat kecil -->
+                                <a href="./sign-in.html" class="dropdown-item py-1 text-danger fw-bolder fs-3"><img src="./assetdbs/logout.svg" class="me-2" alt="" />Logout</a>
+                                <!-- Mengatur padding vertikal pada <a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="page-wrapper">
+                <!-- Page header -->
+                <div class="page-header d-print-none">
+                    <div class="container-xl">
+                        <div class="row g-2 align-items-center">
+                            <div class="col">
+                                <!-- Page pre-title -->
+                                <h2 class="page-title">Dashboard</h2>
+                            </div>
+                            <!-- Page title actions -->
+                            <div class="col-auto ms-auto d-print-none">
+                                <div class="align-items-center d-flex gap-3">
+                                    <span class="d-none align-items-center d-lg-flex me-3" >
+                                        
+                                        <a href="./index.html" class="fs-2 fw-bold link-danger text-decoration-none"><img src="home.svg" alt="" class="me-2"/>Home</a>
+                                    </span>
+                                    <span class="d-none align-items-center d-lg-flex">
+                                        
+                                        <a href="./floor.html" class="fs-2 fw-bold link-danger text-decoration-none"><img src="floor.svg" alt="" class="me-2" />All Floor</a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Page body -->
+                <div class="page-body">
+                    <div class="container-xl">
+                        <div class="row">
+                            <!-- Lantai 1 -->
+                            <div class="col-md-6">
+                                <div class="card border-0 shadow-sm">
+                                    <div class="card-header" style="background-color: #A10000;">
+                                        <h3 class="card-title text-white">LANTAI 1</h3>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="d-lg-flex d-block" style="gap: 20px;">
+                                            <div class="mb-3" style="max-width: 306px; ">
+                                                <div class="px-2 position-relative shadow-sm border">
+                                                    <div class="border-start border-top border-2 border-dark position-absolute w-2 h-2" style="top: -1.5px; left: -1.5px"></div>
+                                                    <div class="border-start border-bottom border-2 border-dark position-absolute w-2 h-2" style="bottom: -1.5px; left: -1.5px"></div>
+                                                    <div class="border-end border-top border-2 border-dark position-absolute w-2 h-2" style="top: -1.5px; right: -1.5px"></div>
+                                                    <div class="border-end border-bottom border-2 border-dark position-absolute w-2 h-2" style="bottom: -1.5px; right: -1.5px"></div>
+                                                    <div class="d-flex align-items-center justify-content-center">
+                                                        <span class="fw-bold" style="font-size: 44.18px; margin-right: 10px">87</span>
+                                                        <div class="overflow-hidden">
+                                                            <div class="d-flex">
+                                                                <img src="./assetdbs/visitorEnter.svg" alt="Visitor Icon" class="me-1" width="20"/>
+                                                                <div class="overflow-hidden">
+                                                                    <img src="./assetdbs/graphVisitor.svg" alt="Visitor Icon" class="animate-image" />
+                                                                </div>
+                                                            </div>
+                                                            <span class="fw-bold small">Visitors Enter</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="mb-3" style="max-width: 306px; ">
+                                                <div class="px-2 position-relative shadow-sm border">
+                                                    <div class="border-start border-top border-2 border-dark position-absolute w-2 h-2" style="top: -1.5px; left: -1.5px"></div>
+                                                    <div class="border-start border-bottom border-2 border-dark position-absolute w-2 h-2" style="bottom: -1.5px; left: -1.5px"></div>
+                                                    <div class="border-end border-top border-2 border-dark position-absolute w-2 h-2" style="top: -1.5px; right: -1.5px"></div>
+                                                    <div class="border-end border-bottom border-2 border-dark position-absolute w-2 h-2" style="bottom: -1.5px; right: -1.5px"></div>
+                                                    <div class="d-flex align-items-center justify-content-center">
+                                                        <span class="fw-bold" style="font-size: 44.18px; margin-right: 10px">87</span>
+                                                        <div class="overflow-hidden">
+                                                            <div class="d-flex">
+                                                                <img src="./assetdbs/visitorInside.svg" alt="Visitor Icon" class="me-1" width="20"/>
+                                                                <div class="overflow-hidden">
+                                                                    <img src="./assetdbs/graphVisitor.svg" alt="Visitor Icon" class="animate-image" />
+                                                                </div>
+                                                            </div>
+                                                            <span class="fw-bold small">Visitors Inside</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="mb-3" style="max-width: 306px; ">
+                                                <div class="px-2 position-relative shadow-sm border">
+                                                    <div class="border-start border-top border-2 border-dark position-absolute w-2 h-2" style="top: -1.5px; left: -1.5px"></div>
+                                                    <div class="border-start border-bottom border-2 border-dark position-absolute w-2 h-2" style="bottom: -1.5px; left: -1.5px"></div>
+                                                    <div class="border-end border-top border-2 border-dark position-absolute w-2 h-2" style="top: -1.5px; right: -1.5px"></div>
+                                                    <div class="border-end border-bottom border-2 border-dark position-absolute w-2 h-2" style="bottom: -1.5px; right: -1.5px"></div>
+                                                    <div class="d-flex align-items-center justify-content-center">
+                                                        <span class="fw-bold" style="font-size: 44.18px; margin-right: 10px">87</span>
+                                                        <div class="overflow-hidden">
+                                                            <div class="d-flex">
+                                                                <img src="./assetdbs/visitorLeave.svg" alt="Visitor Icon" class="me-1" width="20"/>
+                                                                <div class="overflow-hidden">
+                                                                    <img src="./assetdbs/graphVisitor.svg" alt="Visitor Icon" class="animate-image" />
+                                                                </div>
+                                                            </div>
+                                                            <span class="fw-bold small">Visitors Leave</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="px-3 px-lg-5 position-relative shadow-sm border w-100 align-items-center justify-content-center h-100">
+                                            <div class="border-start border-top border-2 border-dark position-absolute w-3 h-3" style="top: -1.5px; left: -1.5px;"></div>
+                                            <div class="border-start border-bottom border-2 border-dark position-absolute w-3 h-3" style="bottom: -1.5px; left: -1.5px;"></div>
+                                            <div class="border-end border-top border-2 border-dark position-absolute w-3 h-3" style="top: -1.5px; right: -1.5px;"></div>
+                                            <div class="border-end border-bottom border-2 border-dark position-absolute w-3 h-3" style="bottom: -1.5px; right: -1.5px;"></div>
+                                    
+                                            <div class="d-flex align-items-center justify-content-between mt-3 mb-5">
+                                                <p class="mb-0">Grafik Status</p> <!-- Tambahkan 'mb-0' untuk menghilangkan margin bawah default -->
+                                                <div class="d-xl-flex d-block align-items-center" style="gap: 20px;"> <!-- Flex container -->
+                                                    <!-- Day -->
+                                                    <div class="d-flex align-items-center" style="gap: 8px;">
+                                                        <div style="background-color: #ed1c24; width: 15px; height: 15px;"></div>
+                                                        <span>Day</span>
+                                                    </div>
+                                                    <!-- Weekend -->
+                                                    <div class="d-flex align-items-center" style="gap: 8px;">
+                                                        <div style="background-color: #7AC241; width: 15px; height: 15px;"></div>
+                                                        <span>Weekend</span>
+                                                    </div>
+                                                    <!-- Month -->
+                                                    <div class="d-flex align-items-center" style="gap: 8px;">
+                                                        <div style="background-color: #368BFF; width: 15px; height: 15px;"></div>
+                                                        <span>Month</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div id="chart-line-stroke" class="w-100"></div> <!-- Ensure chart container takes 100% width -->
+                                        </div>
+                                    
+            
+                                        <script>
+                                            // @formatter:off
+                                            document.addEventListener('DOMContentLoaded', function () {
+                                                window.ApexCharts &&
+                                                    new ApexCharts(document.getElementById('chart-line-stroke'), {
+                                                        chart: {
+                                                            type: 'line',
+                                                            fontFamily: 'inherit',
+                                                            height: 160,
+                                                            parentHeightOffset: 0,
+                                                            toolbar: {
+                                                                show: false,
+                                                            },
+                                                            animations: {
+                                                                enabled: false,
+                                                            },
+                                                        },
+                                                        fill: {
+                                                            opacity: 1,
+                                                        },
+                                                        stroke: {
+                                                            width: 2,
+                                                            lineCap: 'round',
+                                                            curve: 'straight',
+                                                        },
+                                                        series: [
+                                                            {
+                                                                name: 'Day',
+                                                                data: [8, 10, 11, 12, 20, 27, 30, 25, 22, 18, 15, 12],
+                                                            },
+                                                            {
+                                                                name: 'Weekend',
+                                                                data: [3, 16, 17, 19, 20, 30, 30, 28, 25, 20, 15, 10],
+                                                            },
+                                                            {
+                                                                name: 'Mount',
+                                                                data: [7, 10, 11, 18, 18, 18, 24, 20, 18, 15, 10, 5],
+                                                            },
+                                                        ],
+                                                        tooltip: {
+                                                            theme: 'dark',
+                                                        },
+                                                        grid: {
+                                                            show: false, // Menghilangkan garis grid
+                                                        },
+                                                        xaxis: {
+                                                            labels: {
+                                                                padding: 0,
+                                                            },
+                                                            tooltip: {
+                                                                enabled: false,
+                                                            },
+                                                            categories: ['13:00', '14:00', '15:00', '16:00', '17:00', '18:00', '19:00', '20:00', '21:00', '22:00', '23:00', '00:00'],
+                                                        },
+                                                        yaxis: {
+                                                            labels: {
+                                                                padding: 10, // Menyesuaikan jarak antara label dan sumbu Y
+                                                            },
+                                                        },
+                                                        colors: ['#ED1C24', '#368BFF', '#7AC241'], // Warna garis sesuai permintaan
+                                                        legend: {
+                                                            show: false,
+                                                        },
+                                                    }).render();
+                                            });
+                                            // @formatter:on
+                                        </script>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Lantai 2 -->
+                            <div class="col-md-6">
+                                <div class="card border-0 shadow-sm">
+                                    <div class="card-header" style="background-color: #A10000;">
+                                        <h3 class="card-title text-white">LANTAI 2</h3>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="d-lg-flex d-block" style="gap: 20px;">
+                                            <div class="mb-3" style="max-width: 306px; ">
+                                                <div class="px-2 position-relative shadow-sm border">
+                                                    <div class="border-start border-top border-2 border-dark position-absolute w-2 h-2" style="top: -1.5px; left: -1.5px"></div>
+                                                    <div class="border-start border-bottom border-2 border-dark position-absolute w-2 h-2" style="bottom: -1.5px; left: -1.5px"></div>
+                                                    <div class="border-end border-top border-2 border-dark position-absolute w-2 h-2" style="top: -1.5px; right: -1.5px"></div>
+                                                    <div class="border-end border-bottom border-2 border-dark position-absolute w-2 h-2" style="bottom: -1.5px; right: -1.5px"></div>
+                                                    <div class="d-flex align-items-center justify-content-center">
+                                                        <span class="fw-bold" style="font-size: 44.18px; margin-right: 10px">87</span>
+                                                        <div class="overflow-hidden">
+                                                            <div class="d-flex">
+                                                                <img src="./assetdbs/visitorEnter.svg" alt="Visitor Icon" class="me-1" width="20"/>
+                                                                <div class="overflow-hidden">
+                                                                    <img src="./assetdbs/graphVisitor.svg" alt="Visitor Icon" class="animate-image" />
+                                                                </div>
+                                                            </div>
+                                                            <span class="fw-bold small">Visitors Enter</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="mb-3" style="max-width: 306px; ">
+                                                <div class="px-2 position-relative shadow-sm border">
+                                                    <div class="border-start border-top border-2 border-dark position-absolute w-2 h-2" style="top: -1.5px; left: -1.5px"></div>
+                                                    <div class="border-start border-bottom border-2 border-dark position-absolute w-2 h-2" style="bottom: -1.5px; left: -1.5px"></div>
+                                                    <div class="border-end border-top border-2 border-dark position-absolute w-2 h-2" style="top: -1.5px; right: -1.5px"></div>
+                                                    <div class="border-end border-bottom border-2 border-dark position-absolute w-2 h-2" style="bottom: -1.5px; right: -1.5px"></div>
+                                                    <div class="d-flex align-items-center justify-content-center">
+                                                        <span class="fw-bold" style="font-size: 44.18px; margin-right: 10px">87</span>
+                                                        <div class="overflow-hidden">
+                                                            <div class="d-flex">
+                                                                <img src="./assetdbs/visitorInside.svg" alt="Visitor Icon" class="me-1" width="20"/>
+                                                                <div class="overflow-hidden">
+                                                                    <img src="./assetdbs/graphVisitor.svg" alt="Visitor Icon" class="animate-image" />
+                                                                </div>
+                                                            </div>
+                                                            <span class="fw-bold small">Visitors Inside</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="mb-3" style="max-width: 306px; ">
+                                                <div class="px-2 position-relative shadow-sm border">
+                                                    <div class="border-start border-top border-2 border-dark position-absolute w-2 h-2" style="top: -1.5px; left: -1.5px"></div>
+                                                    <div class="border-start border-bottom border-2 border-dark position-absolute w-2 h-2" style="bottom: -1.5px; left: -1.5px"></div>
+                                                    <div class="border-end border-top border-2 border-dark position-absolute w-2 h-2" style="top: -1.5px; right: -1.5px"></div>
+                                                    <div class="border-end border-bottom border-2 border-dark position-absolute w-2 h-2" style="bottom: -1.5px; right: -1.5px"></div>
+                                                    <div class="d-flex align-items-center justify-content-center">
+                                                        <span class="fw-bold" style="font-size: 44.18px; margin-right: 10px">87</span>
+                                                        <div class="overflow-hidden">
+                                                            <div class="d-flex">
+                                                                <img src="./assetdbs/visitorLeave.svg" alt="Visitor Icon" class="me-1" width="20"/>
+                                                                <div class="overflow-hidden">
+                                                                    <img src="./assetdbs/graphVisitor.svg" alt="Visitor Icon" class="animate-image" />
+                                                                </div>
+                                                            </div>
+                                                            <span class="fw-bold small">Visitors Leave</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="px-3 px-lg-5 position-relative shadow-sm border w-100 align-items-center justify-content-center h-100">
+                                            <div class="border-start border-top border-2 border-dark position-absolute w-3 h-3" style="top: -1.5px; left: -1.5px;"></div>
+                                            <div class="border-start border-bottom border-2 border-dark position-absolute w-3 h-3" style="bottom: -1.5px; left: -1.5px;"></div>
+                                            <div class="border-end border-top border-2 border-dark position-absolute w-3 h-3" style="top: -1.5px; right: -1.5px;"></div>
+                                            <div class="border-end border-bottom border-2 border-dark position-absolute w-3 h-3" style="bottom: -1.5px; right: -1.5px;"></div>
+                                    
+                                            <div class="d-flex align-items-center justify-content-between mt-3 mb-5">
+                                                <p class="mb-0">Grafik Status</p> <!-- Tambahkan 'mb-0' untuk menghilangkan margin bawah default -->
+                                                <div class="d-xl-flex d-block align-items-center" style="gap: 20px;"> <!-- Flex container -->
+                                                    <!-- Day -->
+                                                    <div class="d-flex align-items-center" style="gap: 8px;">
+                                                        <div style="background-color: #ed1c24; width: 15px; height: 15px;"></div>
+                                                        <span>Day</span>
+                                                    </div>
+                                                    <!-- Weekend -->
+                                                    <div class="d-flex align-items-center" style="gap: 8px;">
+                                                        <div style="background-color: #7AC241; width: 15px; height: 15px;"></div>
+                                                        <span>Weekend</span>
+                                                    </div>
+                                                    <!-- Month -->
+                                                    <div class="d-flex align-items-center" style="gap: 8px;">
+                                                        <div style="background-color: #368BFF; width: 15px; height: 15px;"></div>
+                                                        <span>Month</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div id="chart-line-stroke2" class="w-100"></div> <!-- Ensure chart container takes 100% width -->
+                                        </div>
+                                    
+            
+                                        <script>
+                                            // @formatter:off
+                                            document.addEventListener('DOMContentLoaded', function () {
+                                                window.ApexCharts &&
+                                                    new ApexCharts(document.getElementById('chart-line-stroke2'), {
+                                                        chart: {
+                                                            type: 'line',
+                                                            fontFamily: 'inherit',
+                                                            height: 160,
+                                                            parentHeightOffset: 0,
+                                                            toolbar: {
+                                                                show: false,
+                                                            },
+                                                            animations: {
+                                                                enabled: false,
+                                                            },
+                                                        },
+                                                        fill: {
+                                                            opacity: 1,
+                                                        },
+                                                        stroke: {
+                                                            width: 2,
+                                                            lineCap: 'round',
+                                                            curve: 'straight',
+                                                        },
+                                                        series: [
+                                                            {
+                                                                name: 'Day',
+                                                                data: [8, 10, 11, 12, 20, 27, 30, 25, 22, 18, 15, 12],
+                                                            },
+                                                            {
+                                                                name: 'Weekend',
+                                                                data: [3, 16, 17, 19, 20, 30, 30, 28, 25, 20, 15, 10],
+                                                            },
+                                                            {
+                                                                name: 'Mount',
+                                                                data: [7, 10, 11, 18, 18, 18, 24, 20, 18, 15, 10, 5],
+                                                            },
+                                                        ],
+                                                        tooltip: {
+                                                            theme: 'dark',
+                                                        },
+                                                        grid: {
+                                                            show: false, // Menghilangkan garis grid
+                                                        },
+                                                        xaxis: {
+                                                            labels: {
+                                                                padding: 0,
+                                                            },
+                                                            tooltip: {
+                                                                enabled: false,
+                                                            },
+                                                            categories: ['13:00', '14:00', '15:00', '16:00', '17:00', '18:00', '19:00', '20:00', '21:00', '22:00', '23:00', '00:00'],
+                                                        },
+                                                        yaxis: {
+                                                            labels: {
+                                                                padding: 10, // Menyesuaikan jarak antara label dan sumbu Y
+                                                            },
+                                                        },
+                                                        colors: ['#ED1C24', '#368BFF', '#7AC241'], // Warna garis sesuai permintaan
+                                                        legend: {
+                                                            show: false,
+                                                        },
+                                                    }).render();
+                                            });
+                                            // @formatter:on
+                                        </script>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <style>
+                    .animate-image {
+                        animation: moving-bars 2s linear;
+                    }
+
+                    @keyframes moving-bars {
+                        0% {
+                            transform: translateX(-100%); /* Mulai dari luar layar kiri */
+                            opacity: 0; /* Mulai dari transparan */
+                        }
+                        30% {
+                            transform: translateX(0); /* Bergerak ke posisi normal */
+                            opacity: 1; /* Menjadi sepenuhnya terlihat */
+                        }
+                        100% {
+                            transform: translateX(0); /* Tetap di posisi normal */
+                            opacity: 1; /* Tetap terlihat */
+                        }
+                    }
+                </style>
+            </div>
+        </div>
+        <div class="modal modal-blur fade" id="modal-report" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">New report</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label class="form-label">Name</label>
+                            <input type="text" class="form-control" name="example-text-input" placeholder="Your report name" />
+                        </div>
+                        <label class="form-label">Report type</label>
+                        <div class="form-selectgroup-boxes row mb-3">
+                            <div class="col-lg-6">
+                                <label class="form-selectgroup-item">
+                                    <input type="radio" name="report-type" value="1" class="form-selectgroup-input" checked />
+                                    <span class="form-selectgroup-label d-flex align-items-center p-3">
+                                        <span class="me-3">
+                                            <span class="form-selectgroup-check"></span>
+                                        </span>
+                                        <span class="form-selectgroup-label-content">
+                                            <span class="form-selectgroup-title strong mb-1">Simple</span>
+                                            <span class="d-block text-secondary">Provide only basic data needed for the report</span>
+                                        </span>
+                                    </span>
+                                </label>
+                            </div>
+                            <div class="col-lg-6">
+                                <label class="form-selectgroup-item">
+                                    <input type="radio" name="report-type" value="1" class="form-selectgroup-input" />
+                                    <span class="form-selectgroup-label d-flex align-items-center p-3">
+                                        <span class="me-3">
+                                            <span class="form-selectgroup-check"></span>
+                                        </span>
+                                        <span class="form-selectgroup-label-content">
+                                            <span class="form-selectgroup-title strong mb-1">Advanced</span>
+                                            <span class="d-block text-secondary">Insert charts and additional advanced analyses to be inserted in the report</span>
+                                        </span>
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <div class="mb-3">
+                                    <label class="form-label">Report url</label>
+                                    <div class="input-group input-group-flat">
+                                        <span class="input-group-text"> https://tabler.io/reports/ </span>
+                                        <input type="text" class="form-control ps-0" value="report-01" autocomplete="off" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="mb-3">
+                                    <label class="form-label">Visibility</label>
+                                    <select class="form-select">
+                                        <option value="1" selected>Private</option>
+                                        <option value="2">Public</option>
+                                        <option value="3">Hidden</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="mb-3">
+                                    <label class="form-label">Client name</label>
+                                    <input type="text" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="mb-3">
+                                    <label class="form-label">Reporting period</label>
+                                    <input type="date" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div>
+                                    <label class="form-label">Additional information</label>
+                                    <textarea class="form-control" rows="3"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#" class="btn btn-link link-secondary" data-bs-dismiss="modal"> Cancel </a>
+                        <a href="#" class="btn btn-primary ms-auto" data-bs-dismiss="modal">
+                            <!-- Download SVG icon from http://tabler-icons.io/i/plus -->
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M12 5l0 14" />
+                                <path d="M5 12l14 0" />
+                            </svg>
+                            Create new report
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Libs JS -->
+        <script src="./dist/libs/apexcharts/dist/apexcharts.min.js?1692870487" defer></script>
+        <script src="./dist/libs/jsvectormap/dist/js/jsvectormap.min.js?1692870487" defer></script>
+        <script src="./dist/libs/jsvectormap/dist/maps/world.js?1692870487" defer></script>
+        <script src="./dist/libs/jsvectormap/dist/maps/world-merc.js?1692870487" defer></script>
+        <!-- Tabler Core -->
+        <script src="./dist/js/tabler.min.js?1692870487" defer></script>
+        <script src="./dist/js/demo.min.js?1692870487" defer></script>
+    </body>
+</html>
