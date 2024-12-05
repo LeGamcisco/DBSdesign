@@ -42,7 +42,7 @@
         <div class="page">
             <!-- Navbar -->
             <header class="navbar navbar-expand-md d-print-none">
-                <div class="container-xl d-flex align-items-center">
+                <div class="container-fluid d-flex align-items-center">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu" aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -75,7 +75,7 @@
             <div class="page-wrapper">
                 <!-- Page header -->
                 <div class="page-header d-print-none">
-                    <div class="container-xl">
+                    <div class="container-fluid">
                         <div class="row g-2 align-items-center">
                             <div class="col">
                                 <h2 class="page-title">Dashboard</h2>
@@ -93,7 +93,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="container-xl">
+                <div class="container-fluid">
                     <div class="w-100 _line"></div>
                 </div>
                 <div class="page-body">
@@ -173,42 +173,41 @@
                                             <img src="./assetdbs/timeIcon.svg" alt="" class="me-2" />
                                             <span class="fw-bold fs-2">Time</span>
                                         </div>
-                                        <!-- Kolom kedua -->
                                         <div class="d-block d-xl-flex justify-content-center gap-3">
-                                            <div class="d-block d-md-flex" style="gap: 25px">
-                                                <div class="position-relative shadow-sm border" style="width: 213px; height: 340px">
+                                            <div class="d-block d-md-flex _custom_gap_child">
+                                                <div class="position-relative shadow-sm border _card">
                                                     <div class="border-start border-top border-3 border-dark position-absolute w-4 h-4 _custom_border_box"></div>
                                                     <div class="border-start border-bottom border-3 border-dark position-absolute w-4 h-4 _custom_border_box"></div>
                                                     <div class="border-end border-top border-3 border-dark position-absolute w-4 h-4 _custom_border_box"></div>
                                                     <div class="border-end border-bottom border-3 border-dark position-absolute w-4 h-4 _custom_border_box"></div>
-                                                    <img src="./assetdbs/chartgraphtimeup.svg" alt="" class="position-absolute" style="bottom: 0; right: 0px" />
+                                                    <img src="./assetdbs/chartgraphtimeup.svg" alt="" class="position-absolute end-0 bottom-0" />
                                                     <div class="m-3">
-                                                        <h4 class="fw-bold" style="width: 90px; font-size: 18px; padding-bottom: 5px; border-bottom: 1px solid black">Peak Hour</h4>
-                                                        <div class="d-flex align-items-center" style="gap: 10px; margin-bottom: 30px;">
-                                                            <h4 class="fw-bold" style="font-size: 18px">13:00 <span class="fw-normal" style="font-size: 15.53px">WIB</span></h4>
-                                                            <div class="vr"></div>
-                                                            <h4 class="fw-bold" style="font-size: 18px">65 <span class="fw-normal" style="font-size: 15.53px">Visitors</span></h4>
+                                                        <h3 class="fw-bold _card_title">Peak Hour</h3>
+                                                        <div class="d-flex _card_time">
+                                                            <p class="fw-bold _card_text">13:00 <span class="fw-normal">WIB</span></p>
+                                                            <div class="vr me-2"></div>
+                                                            <p class="fw-bold _card_text" style="color:#ED1C24">65 <span class="fw-normal text-dark">Visitors</span></p>
                                                         </div>
                                                         <div>
                                                             <img src="./assetdbs/upicon.svg" alt="" class="arrow-animation-up" />
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="position-relative shadow-sm border" style="width: 213px; height: 340px">
+                                                <div class="position-relative shadow-sm border _card">
                                                     <div class="border-start border-top border-3 border-dark position-absolute w-4 h-4 _custom_border_box"></div>
                                                     <div class="border-start border-bottom border-3 border-dark position-absolute w-4 h-4 _custom_border_box"></div>
                                                     <div class="border-end border-top border-3 border-dark position-absolute w-4 h-4 _custom_border_box"></div>
                                                     <div class="border-end border-bottom border-3 border-dark position-absolute w-4 h-4 _custom_border_box"></div>
-                                                    <img src="./assetdbs/chartgraphtimedown.svg" alt="" class="position-absolute" style="bottom: 0; right: 0px" />
+                                                    <img src="./assetdbs/chartgraphtimedown.svg" alt="" class="position-absolute end-0 bottom-0" />
                                                     <div class="m-3">
-                                                        <h4 class="fw-bold" style="width: 120px; font-size: 18px; padding-bottom: 5px; border-bottom: 1px solid black">Lowest Hour</h4>
-                                                        <div class="d-flex align-items-center" style="gap: 10px; margin-bottom: 30px">
-                                                            <h4 class="fw-bold" style="font-size: 18px">13:00 <span class="fw-normal" style="font-size: 15.53px">WIB</span></h4>
-                                                            <div class="vr"></div>
-                                                            <h4 class="fw-bold" style="font-size: 18px">65 <span class="fw-normal" style="font-size: 15.53px">Visitors</span></h4>
+                                                        <h3 class="fw-bold _card_title">Lowest Hour</h3>
+                                                        <div class="d-flex _card_time">
+                                                            <p class="fw-bold _card_text">13:00 <span class="fw-normal">WIB</span></p>
+                                                            <div class="vr me-2"></div>
+                                                            <p class="fw-bold _card_text" style="color:#368BFF">65 <span class="fw-normal text-dark">Visitors</span></p>
                                                         </div>
                                                         <div>
-                                                            <img src="./assetdbs/downicon.svg" alt="" />
+                                                            <img src="./assetdbs/downicon.svg" alt="" class="arrow-animation-up" />
                                                         </div>
                                                     </div>
                                                 </div>
@@ -223,19 +222,19 @@
                                     <img src="./assetdbs/dayIcon.svg" alt="" class="me-2" />
                                     <span class="fw-bold fs-2">Day</span>
                                 </div>
-                                <div class="d-block d-md-flex justify-content-center" style="gap: 25px">
+                                <div class="d-block d-md-flex justify-content-center _custom_gap_child">
                                     <div class="d-block d-xl-flex">
-                                        <div class="position-relative shadow-sm border" style="width: 213px; height: 340px">
+                                        <div class="position-relative shadow-sm border _card">
                                             <div class="border-start border-top border-3 border-dark position-absolute w-4 h-4 _custom_border_box"></div>
                                             <div class="border-start border-bottom border-3 border-dark position-absolute w-4 h-4 _custom_border_box"></div>
                                             <div class="border-end border-top border-3 border-dark position-absolute w-4 h-4 _custom_border_box"></div>
                                             <div class="border-end border-bottom border-3 border-dark position-absolute w-4 h-4 _custom_border_box"></div>
-                                            <img src="./assetdbs/chartgraphtimeup.svg" alt="" class="position-absolute" style="bottom: 0; right: 0px" />
+                                            <img src="./assetdbs/chartgraphtimeup.svg" alt="" class="position-absolute end-0 bottom-0" />
                                             <div class="m-3">
-                                                <h4 class="fw-bold" style="width: 90px; font-size: 18px; padding-bottom: 5px; border-bottom: 1px solid black">Busy Day</h4>
-                                                <div style="margin-bottom: 30px">
-                                                    <h4 class="fw-bold" style="font-size: 18px">Monday</h4>
-                                                    <h4 class="fw-bold" style="font-size: 18px">65 <span class="fw-normal" style="font-size: 15.53px">Visitors</span></h4>
+                                                <h4 class="fw-bold _card_title">Busy Day</h4>
+                                                <div class="_card_time _card_text_day">
+                                                    <p class="fw-bold">Monday</p>
+                                                    <p class="fw-bold" style="color:#ED1C24">65 <span class="fw-normal text-dark">Visitors</span></p>
                                                 </div>
                                                 <div>
                                                     <img src="./assetdbs/upicon.svg" alt="" />
@@ -244,17 +243,17 @@
                                         </div>
                                     </div>
                                     <div class="d-block d-xl-flex">
-                                        <div class="position-relative shadow-sm border" style="width: 213px; height: 340px">
+                                        <div class="position-relative shadow-sm border _card">
                                             <div class="border-start border-top border-3 border-dark position-absolute w-4 h-4 _custom_border_box"></div>
                                             <div class="border-start border-bottom border-3 border-dark position-absolute w-4 h-4 _custom_border_box"></div>
                                             <div class="border-end border-top border-3 border-dark position-absolute w-4 h-4 _custom_border_box"></div>
                                             <div class="border-end border-bottom border-3 border-dark position-absolute w-4 h-4 _custom_border_box"></div>
-                                            <img src="./assetdbs/chartgraphdaydown.svg" alt="" class="position-absolute" style="bottom: 0; right: 0px" />
+                                            <img src="./assetdbs/chartgraphdaydown.svg" alt="" class="position-absolute end-0 bottom-0" />
                                             <div class="m-3">
-                                                <h4 class="fw-bold" style="width: 105px; font-size: 18px; padding-bottom: 5px; border-bottom: 1px solid black">Lowest Day</h4>
-                                                <div style="margin-bottom: 30px">
-                                                    <h4 class="fw-bold" style="font-size: 18px">Monday</h4>
-                                                    <h4 class="fw-bold" style="font-size: 18px">65 <span class="fw-normal" style="font-size: 15.53px">Visitors</span></h4>
+                                                <h4 class="fw-bold _card_title">Busy Day</h4>
+                                                <div class="_card_time _card_text_day">
+                                                    <p class="fw-bold">Friday</p>
+                                                    <p class="fw-bold" style="color:#7AC241">15 <span class="fw-normal text-dark">Visitors</span></p>
                                                 </div>
                                                 <div>
                                                     <img src="./assetdbs/downdayicon.svg" alt="" />
@@ -266,8 +265,8 @@
                             </div>
                         </div>
 
-                        <div class="d-block d-xl-flex p-0 m-0" style="gap: 66px">
-                            <div class="px-3 px-lg-5 position-relative shadow-sm border w-100 align-items-center justify-content-center h-100" style="max-width: 790px">
+                        <div class="d-block d-xl-flex p-0 m-0 _custom_gap_parent">
+                            <div class="px-3 px-lg-5 position-relative shadow-sm border w-100 align-items-center justify-content-center h-100 _statistic_card">
                                 <div class="border-start border-top border-3 border-dark position-absolute w-4 h-4 _custom_border_box"></div>
                                 <div class="border-start border-bottom border-3 border-dark position-absolute w-4 h-4 _custom_border_box"></div>
                                 <div class="border-end border-top border-3 border-dark position-absolute w-4 h-4 _custom_border_box"></div>

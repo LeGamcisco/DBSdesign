@@ -1,5 +1,9 @@
 body {
     background-color: white;
+
+}
+
+.container-fluid {
     max-width: 1340px;
     margin: 0 auto;
 }
@@ -32,7 +36,6 @@ body {
     font-size: 70px;
     margin-right: 10px;
 }
-
 ._visitor_animate_icon {
     animation: animate-icon 1s linear;
 }
@@ -65,8 +68,47 @@ body {
     }
 }
 
+/* Time & Day */
+._card {
+    width: 213px;
+    height: 340px;
+}
+._card_title {
+    width: fit-content;
+    font-size: 18px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid black;
+}
+._card_time {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    height: 42.51px;
+    width: 131.43px;
+}
+._card_time > ._card_text {
+    font-size: 22.18px;
+    line-height: 20.7px;
+    letter-spacing: -3%;
+    padding: 0;
+    margin: 0;
+}
+._card_text > span {
+    font-size: 15.53px
+}
+._card_text_day > p {
+    padding: 0;
+    margin: 0;
+    line-height: 22px;
+    font-size: 22.18px
+}
+._card_text_day > p > span {
+    font-size: 15.53px;
+}
 
-
+/* Statistic */
+._statistic_card {
+    max-width: 790px
+}
 
 
 
@@ -79,12 +121,13 @@ body {
     margin-top: 33px;
     margin-bottom: 44px;
 }
-
 /* Gap */
 ._custom_gap_parent {
     gap: 66px;
 }
-
+._custom_gap_child {
+    gap: 25px;
+}
 /* Border */
 .shadow-sm > ._custom_border_box:first-child {
     top: -1.5px; 
