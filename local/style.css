@@ -1,0 +1,107 @@
+body {
+    background-color: white;
+    max-width: 1340px;
+    margin: 0 auto;
+}
+
+/* Navbar */
+._navbar_nav > .navbar_date_time {
+    gap: 0;
+    line-height: 32px;
+}
+._navbar_nav > ._navbar_date_time span:first-child {
+    font-size: 25px;
+    letter-spacing: 0;
+}
+._navbar_nav > ._navbar_date_time span:nth-child(2) {
+    font-size: 25px;
+    color: #ed1c24;
+    letter-spacing: -1.5px;
+}
+._navbar_nav > .nav-item > a > img {
+    width: 62px;
+    height: 62px;
+}
+
+
+/* Visitor Count */
+._visitor_box {
+    max-width: 306px;
+}
+._visitor_box > div > div > ._visitor_count {
+    font-size: 70px;
+    margin-right: 10px;
+}
+
+._visitor_animate_icon {
+    animation: animate-icon 1s linear;
+}
+@keyframes animate-icon {
+    0% {
+        opacity: 0; /* Mulai dari transparan */
+    }
+    30% {
+        opacity: 1; /* Menjadi sepenuhnya terlihat */
+    }
+    100% {
+        opacity: 1; /* Tetap terlihat */
+    }
+}
+._visitor_animate_graph {
+    animation: moving-graph 3s linear;
+}
+@keyframes moving-graph {
+    0% {
+        transform: translateX(-100%); /* Mulai dari luar layar kiri */
+        opacity: 0; /* Mulai dari transparan */
+    }
+    30% {
+        transform: translateX(0); /* Bergerak ke posisi normal */
+        opacity: 1; /* Menjadi sepenuhnya terlihat */
+    }
+    100% {
+        transform: translateX(0); /* Tetap di posisi normal */
+        opacity: 1; /* Tetap terlihat */
+    }
+}
+
+
+
+
+
+
+
+/* Props */
+/* Line */
+._line {
+    background-color: #c8c8c8;
+    height: 1px;
+    margin-top: 33px;
+    margin-bottom: 44px;
+}
+
+/* Gap */
+._custom_gap_parent {
+    gap: 66px;
+}
+
+/* Border */
+.shadow-sm > ._custom_border_box:first-child {
+    top: -1.5px; 
+    left: -1.5px
+}
+.shadow-sm > ._custom_border_box:nth-child(2) {
+    bottom: -1.5px; 
+    left: -1.5px
+}
+.shadow-sm > ._custom_border_box:nth-child(3) {
+    top: -1.5px; 
+    right: -1.5px
+}
+.shadow-sm > ._custom_border_box:nth-child(4) {
+    bottom: -1.5px; 
+    right: -1.5px
+}
+
+
+
